@@ -1,0 +1,6 @@
+framework module Pods_Gipher {
+  umbrella header "Pods-Gipher-umbrella.h"
+
+  export *
+  module * { export * }
+}

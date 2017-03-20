@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aDh-pi-HAn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gipher-->
+        <scene sceneID="Zf9-Eo-MY6">
+            <objects>
+                <viewController id="xf4-0v-sAI" customClass="FirstVC" customModule="Gipher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aSd-3z-zO9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Skr-jT-6Hi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dOE-8j-8I7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cA8-V6-ric">
+                                <rect key="frame" x="0.0" y="88" width="375" height="579"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="gifCell" rowHeight="80" id="bS6-1h-S8y" customClass="GifCell" customModule="Gipher" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bS6-1h-S8y" id="Szv-wr-wXZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slug" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="v2Q-3Q-Npr">
+                                                    <rect key="frame" x="8" y="8" width="34" height="21.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="lGc-ia-glg">
+                                                    <rect key="frame" x="8" y="50" width="49" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="v2Q-3Q-Npr" firstAttribute="leading" secondItem="Szv-wr-wXZ" secondAttribute="leadingMargin" id="2ZC-cc-VMk"/>
+                                                <constraint firstAttribute="trailing" secondItem="lGc-ia-glg" secondAttribute="trailing" constant="318" id="BqE-q2-5Mf"/>
+                                                <constraint firstItem="v2Q-3Q-Npr" firstAttribute="top" secondItem="Szv-wr-wXZ" secondAttribute="topMargin" id="KLW-fO-a4m"/>
+                                                <constraint firstItem="v2Q-3Q-Npr" firstAttribute="firstBaseline" secondItem="lGc-ia-glg" secondAttribute="firstBaseline" constant="-42" id="VdA-ko-16x"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="lGc-ia-glg" secondAttribute="bottom" id="Yv2-ih-RwY"/>
+                                                <constraint firstItem="v2Q-3Q-Npr" firstAttribute="baseline" secondItem="lGc-ia-glg" secondAttribute="baseline" constant="-41.5" id="dYU-Yp-YZB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ratingLabel" destination="lGc-ia-glg" id="rfp-Ss-Ewi"/>
+                                            <outlet property="slugLabel" destination="v2Q-3Q-Npr" id="q2A-sa-k3a"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cA8-V6-ric" secondAttribute="trailing" id="0gY-m5-1Xb"/>
+                            <constraint firstItem="cA8-V6-ric" firstAttribute="leading" secondItem="dOE-8j-8I7" secondAttribute="leading" id="JtO-D4-lp6"/>
+                            <constraint firstItem="Skr-jT-6Hi" firstAttribute="top" secondItem="cA8-V6-ric" secondAttribute="bottom" id="UuU-e8-ckE"/>
+                            <constraint firstItem="cA8-V6-ric" firstAttribute="top" secondItem="aSd-3z-zO9" secondAttribute="bottom" constant="24" id="mgO-x4-dgp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gipher" id="nPY-q5-69q"/>
+                    <connections>
+                        <outlet property="tableView" destination="cA8-V6-ric" id="fgz-1v-0O8"/>
+                        <segue destination="6q2-De-cKG" kind="show" identifier="toView" id="jdp-s3-uZS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vig-dB-8WS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068" y="116"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="CAS-bk-4Fy">
+            <objects>
+                <viewController id="6q2-De-cKG" customClass="SecondVC" customModule="Gipher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nq7-HH-nxx"/>
+                        <viewControllerLayoutGuide type="bottom" id="lL7-Tu-F1O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fd9-9u-3Sv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8v-EN-zjr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832.8" y="115.59220389805098"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xHE-Tx-pw8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aDh-pi-HAn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Mu-ue-Ky5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xf4-0v-sAI" kind="relationship" relationship="rootViewController" id="DlP-1Q-faG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UDx-te-Nq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341.60000000000002" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+</document>

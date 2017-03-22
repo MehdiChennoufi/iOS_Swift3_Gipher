@@ -10,10 +10,12 @@ import UIKit
 
 class GifCell: UITableViewCell {
 
+    //MARK: - VARIABLES ET CONSTANTES
     @IBOutlet weak var slugLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var linkLabel: UILabel!
     
+    //MARK: - FONCTIONS DE LA CELLULE
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

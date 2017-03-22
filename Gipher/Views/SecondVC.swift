@@ -11,46 +11,45 @@ import FLAnimatedImage
 
 class SecondVC: UIViewController {
 
+    //MARK: - VARIBALES ET CONSTANTES
+    
     var gif: Gif!
+
+    @IBOutlet weak var loadingLabel: UILabel!
+    @IBOutlet weak var spiningWheel: UIActivityIndicatorView!
+
+    //MARK: - FONCTIONS DE LA VUE
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.loadingLabel.isHidden = false
+        self.spiningWheel.isHidden = false
+        self.spiningWheel.startAnimating()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        DispatchQueue.main.async {
+        DispatchQueue.global(qos: .background).async {
             do {
                 let data = try Data(contentsOf: URL(string: self.gif.link)!)
-                let image = FLAnimatedImage(animatedGIFData: data)
-                let fAnimatedImage = FLAnimatedImageView()
-                fAnimatedImage.animatedImage = image
-                fAnimatedImage.frame = CGRect(x: 0.0, y: 0.0, width: 200.0, height: 200.00)
-                fAnimatedImage.center = self.view.center
-                self.view.addSubview(fAnimatedImage)
+                
+                DispatchQueue.main.async {
+                    let image = FLAnimatedImage(animatedGIFData: data)
+                    let fAnimatedImage = FLAnimatedImageView()
+                    
+                    fAnimatedImage.animatedImage = image
+                    fAnimatedImage.frame = CGRect(x: 0.0, y: 0.0, width: 200.0, height: 200.00)
+                    fAnimatedImage.center = self.view.center
+                    
+                    self.loadingLabel.isHidden = true
+                    self.spiningWheel.stopAnimating()
+                    self.spiningWheel.isHidden = true
+                    
+                    self.view.addSubview(fAnimatedImage)
+                }
             }
             catch {
                 print("error could not load data")
             }
         }
-
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

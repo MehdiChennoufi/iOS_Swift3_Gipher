@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DC14D5CA1E801EA7008A3AC5"
-               BuildableName = "Gipher.app"
-               BlueprintName = "Gipher"
-               ReferencedContainer = "container:Gipher.xcodeproj">
+               BlueprintIdentifier = "CA7D9595A38326C6ED0AF07EF7FC85A0"
+               BuildableName = "Pods_Gipher.framework"
+               BlueprintName = "Pods-Gipher"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC14D5CA1E801EA7008A3AC5"
-            BuildableName = "Gipher.app"
-            BlueprintName = "Gipher"
-            ReferencedContainer = "container:Gipher.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,23 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC14D5CA1E801EA7008A3AC5"
-            BuildableName = "Gipher.app"
-            BlueprintName = "Gipher"
-            ReferencedContainer = "container:Gipher.xcodeproj">
+            BlueprintIdentifier = "CA7D9595A38326C6ED0AF07EF7FC85A0"
+            BuildableName = "Pods_Gipher.framework"
+            BlueprintName = "Pods-Gipher"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACTIVITY_MODE"
-            value = "disable"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -77,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC14D5CA1E801EA7008A3AC5"
-            BuildableName = "Gipher.app"
-            BlueprintName = "Gipher"
-            ReferencedContainer = "container:Gipher.xcodeproj">
+            BlueprintIdentifier = "CA7D9595A38326C6ED0AF07EF7FC85A0"
+            BuildableName = "Pods_Gipher.framework"
+            BlueprintName = "Pods-Gipher"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

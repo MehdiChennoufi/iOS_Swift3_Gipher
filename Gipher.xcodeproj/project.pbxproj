@@ -17,6 +17,7 @@
 		DC14D5E31E802C06008A3AC5 /* NetworManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14D5E21E802C06008A3AC5 /* NetworManager.swift */; };
 		DC14D5EA1E803492008A3AC5 /* GifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14D5E91E803492008A3AC5 /* GifCell.swift */; };
 		DC14D5EC1E8038FF008A3AC5 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14D5EB1E8038FF008A3AC5 /* SecondVC.swift */; };
+		DC1C2E501E8278C4003E2CD2 /* NetworkManager_Corrige.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1C2E4F1E8278C4003E2CD2 /* NetworkManager_Corrige.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		DC14D5E21E802C06008A3AC5 /* NetworManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworManager.swift; path = ../NetworManager.swift; sourceTree = "<group>"; };
 		DC14D5E91E803492008A3AC5 /* GifCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifCell.swift; sourceTree = "<group>"; };
 		DC14D5EB1E8038FF008A3AC5 /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondVC.swift; path = ../Views/SecondVC.swift; sourceTree = "<group>"; };
+		DC1C2E4F1E8278C4003E2CD2 /* NetworkManager_Corrige.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager_Corrige.swift; sourceTree = "<group>"; usesTabs = 0; };
 		DF26BF13F6D22357285474BB /* Pods-Gipher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gipher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gipher/Pods-Gipher.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				DC14D5E21E802C06008A3AC5 /* NetworManager.swift */,
+				DC1C2E4F1E8278C4003E2CD2 /* NetworkManager_Corrige.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				DC14D5EA1E803492008A3AC5 /* GifCell.swift in Sources */,
 				DC14D5CF1E801EA7008A3AC5 /* AppDelegate.swift in Sources */,
 				DC14D5EC1E8038FF008A3AC5 /* SecondVC.swift in Sources */,
+				DC1C2E501E8278C4003E2CD2 /* NetworkManager_Corrige.swift in Sources */,
 				DC14D5E11E802B1A008A3AC5 /* Gif.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
